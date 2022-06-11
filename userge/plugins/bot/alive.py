@@ -65,7 +65,7 @@ async def set_alive_media(message: Message):
         if found:
             media_ = found["url"]
         else:
-            media_ = "https://telegra.ph/file/1fb4c193b5ac0c593f528.jpg"
+            media_ = "https://te.legra.ph/file/1ace21c9c5b3da0261059.jpg"
         return await message.edit(f"The alive media is set to [<b>THIS</b>]({media_}).")
     elif "-r" in message.flags:
         if not found:
@@ -151,7 +151,7 @@ async def send_alive_message(message: Message) -> None:
         caption += (
             f"\n⚡️  <a href={Config.UPSTREAM_REPO}><b>REPO</b></a>"
             "    <code>|</code>    "
-            "👥  <a href='https://t.me/useless_x'><b>SUPPORT</b></a>"
+            "👥  <a href='https://t.me/Skullx_07'><b>OWNER</b></a>"
         )
     if not Config.ALIVE_MEDIA:
         await client.send_photo(
@@ -285,12 +285,12 @@ class Bot_Alive:
     def alive_info(me):
         u_name = " ".join([me.first_name, me.last_name or ""])
         alive_info = f"""
-­<a href="https://t.me/xplugin"><b>𝐕𝐄𝐍𝐎𝐌</a> is spreading.</b>
+­<a href="https://t.me/xplugin"><b>𝚂𝙺𝚄𝙻𝙻𝚇</a> 𝙸𝚜 𝙰𝙻𝙸𝚅𝙴 🤖</b>
 
-  🐍   <b>Python      :</b>    <code>v{versions.__python_version__}</code>
-  🔥   <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
-  🧬   <b>𝑿                :</b>    <code>v{get_version()}</code>
-  👤   <b>User          :</b>    <code>{u_name}</code>
+     <b>Python      :</b>    <code>v{versions.__python_version__}</code>
+     <b>Pyrogram :</b>    <code>v{versions.__pyro_version__}</code>
+     <b>BOT                :</b>    <code>v{get_version()}</code>
+     <b>OWNER          :</b>    <code>{u_name}</code>
   <b>{Bot_Alive._get_mode()}</b>        <code>|</code>    🕔  <b>{userge.uptime}</b>
 """
         return alive_info
@@ -311,7 +311,7 @@ class Bot_Alive:
             ],
             [
                 InlineKeyboardButton(
-                    text="✖️  XPLUGINS", url="t.me/ux_xplugin_support"
+                    text="✖️  XPLUGINS", url="t.me/Hydradiscuss"
                 ),
                 InlineKeyboardButton(text="⚡  REPO", url=Config.UPSTREAM_REPO),
             ],
